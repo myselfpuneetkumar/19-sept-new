@@ -20,6 +20,7 @@
                     <th>Adhar Number
                     </th>
                     <th>Mobile No</th>
+                    <th>Actions</th>
                 </tr>
             </thead>
             <% students.forEach((student)=>{ %>
@@ -30,8 +31,9 @@
                     <td> <%= student.firstName %></td>
                     <td> <%= student.lastName %></td>
                     <td> <%= student.fatherName %></td>
-                    <td> <%= student.adharCardNo %></td>
+                    <td> <%= student.aadharNo %></td>
                     <td> <%= student.mobileNo %></td>
+                    <td> <a href="/student/edit/page/<%= student._id %>" class="btn btn-warning w-75">Edit</a></td>
                     
 
 
